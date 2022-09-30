@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="bookmarker">
+    <meta name="description" content="it's a free bookmarker for your favorite sites">
+    <meta name="author" content="Rana Gaber Badr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/marker_style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="grid">
+            <div>
+                <h1>Bookmarker</h1>
+            </div>
+
+            <div class="date">
+                <p class="datepar" id="year"></p>
+                <p class="datepar" id="time"></p>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="inputform">
+            <h2>Bookmark your favorite sites</h4>
+                <form id="inform">
+                    <div class="userIn">
+                        <label for="sitename">Site Name</label>
+                        <input type="text" name="site_name" id="sitename" placeholder="Bookmark Name">
+                        <p id="namerror" class="error"></p>
+                    </div>
+                    <div class="userIn">
+                        <label for="siteurl">Site Name</label>
+                        <input type="text" name="site_url" id="siteurl" placeholder="Websit URL">
+                        <p id="urlerror" class="error"></p>
+                    </div>
+                    <div id="submit">
+                        <button type="submit" id="submitbtn" onclick=" toLocal()">submit</button>
+
+                    </div>
+                </form>
+
+
+        </div>
+
+        <div id="result">
+
+
+
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2022 Bookmarker Inc.</p>
+    </footer>
+
+    <script src="js/marker_active.js"></script>
+</body>
+
+</html>
